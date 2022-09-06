@@ -1,186 +1,292 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--
+	Ion by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Website description here" />
-    <meta name="keywords" content="website,keywords,here" />
-    <meta name="viewport" content="initial-scale=1.0,width=device-width" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito:700&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="http://fonts.googleapis.com/css?family=Open Sans"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <title>Ion by TEMPLATED</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
     <script src="js/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-    <title>Nobanno Bangladesh Graduate Students' Association</title>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+    <noscript>
+      <link rel="stylesheet" href="css/skel.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/style-xlarge.css" />
+    </noscript>
   </head>
-  <body>
-    <div id="main-content">
-      <a name="home"></a>
-      <div id="header">
-        <div class="area">
-          <div id="logo">
-            <a href="#">
-              <img
-                id="light-logo"
-                style="display: inline"
-                alt="website logo"
-                src="images/logo.jpg"
-              />
-            </a>
-          </div>
-          <div id="name">
-            <a href="#home">Nobanno BGSA </a>
-          </div>
-          <div id="navigation">
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#features">Events</a></li>
-              <li><a href="#contact">Students</a></li>
-              <li>
-                <a href="#contact"
-                  >Information and Resources for New Students</a
-                >
-              </li>
-              <li><a href="#contact">Gallery</a></li>
-              <li><a href="#contact">Executive Committee</a></li>
-              <li><a href="#contact">Contact us</a></li>
-            </ul>
-          </div>
-          <div
-            id="responsive-icon"
-            onclick="$('#responsive-menu').slideToggle();"
-          >
-            <a href="javascript:void(0);"
-              ><img id="mobile-image" src="images/menu.png"
-            /></a>
-          </div>
-        </div>
-      </div>
-      <div id="responsive-menu">
+  <body id="top">
+    <!-- Header -->
+    <header id="header" class="skel-layers-fixed">
+      <h1><a href="#">NOBANNO BGSA</a></h1>
+      <nav id="nav">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="left-sidebar.html">Events</a></li>
+          <li><a href="right-sidebar.html">Students</a></li>
+          <li>
+            <a href="no-sidebar.html"
+              >information and Resources for New Students</a
+            >
+          </li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Executive Committee</a></li>
+          <li><a href="#" class="button special">Contact Us</a></li>
         </ul>
-      </div>
-      <div class="clear"></div>
-      <img class="bg" src="images/background.jpg" />
-      <div class="mainpage-display">
-        <h1 class="mainpage-heading">
-          Nobanno-Bangladesh Graduate Students' Association
-        </h1>
-        <p class="mainpage-p">
+      </nav>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner">
+      <div class="inner">
+        <h2>Nobanno-Bangladesh Graduate Students' Association</h2>
+        <p>
           "Nobanno" is the association for students coming from Bangladesh. This
           association aims to provide a platform to promote and nurture the
-          culture of Bangladesh on the campus of the University of Maryland,
-          College Park. This association is a non-religious, non-political
-          association, functioning as a cultural organization.
+          culture of Bangladesh on the campus of the
+          <em>University of Maryland, College Park</em>. This association is a
+          non-religious, non-political association, functioning as a cultural
+          organization.
         </p>
-        <br />
+        <!--
+        <ul class="actions">
+          <li><a href="#content" class="button big special">Sign Up</a></li>
+          <li><a href="#elements" class="button big alt">Learn More</a></li>
+        </ul>
+		-->
       </div>
-      <img
-        style="width: 100%; margin-top: 7em"
-        draggable="false"
-        src="images/cover.png"
-      /><a name="features"></a>
-      <div
-        class="boxes-container"
-        style="padding-top: 7em; margin-top: -0.32em"
-      >
-        <h1 id="box-h1">Features</h1>
-        <div class="home-box">
-          <img src="images/content-placeholder.png" />
-          <h1>Section title here</h1>
-          <p>Section content here</p>
-        </div>
-        <div class="home-box">
-          <img src="images/content-placeholder.png" />
-          <h1>Section title here</h1>
-          <p>Section content here</p>
-        </div>
-        <div class="home-box">
-          <img src="images/content-placeholder.png" />
-          <h1>Section title here</h1>
-          <p>Section content here</p>
-        </div>
-        <div class="clear"></div>
-      </div>
-      <div class="boxes-container" id="quote-container">
-        <h1 id="ldq">“</h1>
-        <blockquote id="main-quote">Text here</blockquote>
-        <h1 id="rdq">”</h1>
-        <h1 id="quote-by" style="padding-left: 16px">- Text here</h1>
-        <div class="clear"></div>
-      </div>
-      <a name="contact"></a>
-      <div id="contact-form-layout">
-        <h1 class="mainpage-heading left">Contact us</h1>
-        <input class="textbox" type="text" placeholder="Name" />
-        <input class="textbox" type="text" placeholder="Email" />
-        <textarea class="textfield" placeholder="Your message"></textarea>
-        <button id="submit" class="transparent-button">Submit</button>
-      </div>
-    </div>
+    </section>
 
-    <div id="footer">
-      <div class="wrapper">
-        <div class="footer-left" style="padding-left: 2em">
-          <ul>
-            <li>📞&nbsp;(phone number here)</li>
-            <li>✉️&nbsp;(email here)</li>
-            <li>📍&nbsp;(Address here)</li>
-          </ul>
+    <!-- One -->
+    <section id="one" class="wrapper style1">
+      <header class="major">
+        <h2>Upcoming Events</h2>
+        <p>Tempus adipiscing commodo ut aliquam blandit</p>
+      </header>
+      <div class="container">
+        <div class="row">
+          <div class="12u">
+            <section class="special box">
+              <i class="icon fa-area-chart major"></i>
+              <h3>Picnic and Newcomer Orientation</h3>
+              <p>DETAILS TBA.</p>
+            </section>
+          </div>
+          <!--
+          <div class="4u">
+            <section class="special box">
+              <i class="icon fa-refresh major"></i>
+              <h3>Blandit quis curae</h3>
+              <p>
+                Eu non col commodo accumsan ante mi. Commodo consectetur sed mi
+                adipiscing accumsan ac nunc tincidunt lobortis.
+              </p>
+            </section>
+          </div>
+          <div class="4u">
+            <section class="special box">
+              <i class="icon fa-cog major"></i>
+              <h3>Amet sed accumsan</h3>
+              <p>
+                Eu non col commodo accumsan ante mi. Commodo consectetur sed mi
+                adipiscing accumsan ac nunc tincidunt lobortis.
+              </p>
+            </section>
+          </div>
+		-->
         </div>
-        <div class="footer-left">
-          <ul>
-            <li>&nbsp;<a style="display: inline" href="#">About Us</a></li>
-            <li>&nbsp;<a style="display: inline" href="#">Help</a></li>
-            <li>&nbsp;<a style="display: inline" href="#">Privacy</a></li>
-          </ul>
+      </div>
+    </section>
+
+    <!-- Two -->
+    <section id="two" class="wrapper style2">
+      <header class="major">
+        <h2>Past Events</h2>
+        <p>Selected events organized by Nobanno BGSA</p>
+      </header>
+      <div class="container">
+        <div class="row">
+          <div class="6u">
+            <section class="special">
+              <a href="#" class="image fit"
+                ><img src="images/background.jpg" alt=""
+              /></a>
+              <h3>Graduation BBQ 2022</h3>
+              <p>
+                It's time for the first event of our association!! We are going
+                to celebrate the accomplishment of recent UMD graduates of
+                Nobanno family. It will be a fun event with summer BBQ, games
+                and other activities. All food will be halal certified. Please
+                join us with your friends and family in this celebration. Please
+                take this opportunity to interact with each other.
+              </p>
+              <ul class="actions">
+                <li><a href="#" class="button alt">Learn More</a></li>
+              </ul>
+            </section>
+          </div>
+          <div class="6u">
+            <section class="special">
+              <a href="#" class="image fit"
+                ><img src="images/summer_games.jpg" alt=""
+              /></a>
+              <h3>Summer Indoor Games 2022</h3>
+              <p>
+                We are glad to announce the very first Summer indoor games 2022
+                arranged by Nobanno: Bangladeshi Graduate Students’ Association
+                of UMD on July 23 and 24. Games will include Chess (15 + 15
+                minutes), FIFA Co-op, Poker (tournament format), 29, Ludu
+                (doubles), Sequence (doubles), Call Bridge
+              </p>
+              <ul class="actions">
+                <li><a href="#" class="button alt">Learn More</a></li>
+              </ul>
+            </section>
+          </div>
+		  <div class="6u">
+            <section class="special">
+              <a href="#" class="image fit"
+                ><img src="images/flood.jpg" alt=""
+              /></a>
+              <h3>Flood Fundraiser: A Colloboration with Ankur International</h3>
+              <p>
+                We hope you are already aware of the dire situation of flooding in the Sylhet region, Bangladesh. It is already reported that this flood has already resulted in at least 25 casualties and is turning out to be a grave threat to the livelihood to the residents.
+With forecasts indicating that the situation will worsen in the coming days, we think that this is high time for us to act for the people impacted by the flooding. Given that one of the agenda of “Nobanno” is to fundraise/donate for good cause once a year, we are collecting donations from the community members to help the flood affected people. 
+We managed to raise <em>645 USD</em> in total for the flood devastated residents.
+              </p>
+              <ul class="actions">
+                <li><a href="#" class="button alt">Learn More</a></li>
+              </ul>
         </div>
-        <div class="clear-mob"></div>
-        <div class="footer-right">
-          <div style="padding-left: 1.5em">
-            <div id="newsletter">
-              <p id="subscribe-text">Subscribe to our newsletter</p>
-              <input
-                class="textbox"
-                id="sub-email"
-                style="display: inline-block"
-                type="text"
-                placeholder="Your Email"
-              />
-              <input
-                class="filled-button"
-                id="subscribe"
-                onclick="subscribe();"
-                type="button"
-                value="Subscribe"
-              />
-              <p id="newsletter-error"></p>
-            </div>
-            <div>
-              <a href="#" target="_blank"
-                ><img class="social-media-img" src="images/facebook.png"
+      </div>
+    </section>
+
+    <!-- Three -->
+	<!--
+    <section id="three" class="wrapper style1">
+      <div class="container">
+        <div class="row">
+          <div class="8u">
+            <section>
+              <h2>Mollis ut adipiscing</h2>
+              <a href="#" class="image fit"
+                ><img src="images/pic03.jpg" alt=""
               /></a>
-              <a href="#" target="_blank"
-                ><img class="social-media-img" src="images/instagram.png"
-              /></a>
-              <span id="copyright">&nbsp;© Copyright notice here</span>
-            </div>
+              <p>
+                Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan
+                blandit accumsan sapien blandit ac amet faucibus aliquet
+                placerat commodo. Interdum ante aliquet commodo accumsan vis
+                phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan
+                ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac
+                interdum ac non praesent. Cubilia lacinia interdum massa
+                faucibus blandit nullam. Accumsan phasellus nunc integer.
+                Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet.
+                Id massa aliquet arcu accumsan lorem amet accumsan commodo odio
+                cubilia ac eu interdum placerat placerat arcu commodo lobortis
+                adipiscing semper ornare pellentesque.
+              </p>
+            </section>
+          </div>
+          <div class="4u">
+            <section>
+              <h3>Magna massa blandit</h3>
+              <p>
+                Feugiat amet accumsan ante aliquet feugiat accumsan. Ante
+                blandit accumsan eu amet tortor non lorem felis semper. Interdum
+                adipiscing orci feugiat penatibus adipiscing col cubilia lorem
+                ipsum dolor sit amet feugiat consequat.
+              </p>
+              <ul class="actions">
+                <li><a href="#" class="button alt">Learn More</a></li>
+              </ul>
+            </section>
+            <hr />
+            <section>
+              <h3>Ante sed commodo</h3>
+              <ul class="alt">
+                <li><a href="#">Erat blandit risus vis adipiscing</a></li>
+                <li><a href="#">Tempus ultricies faucibus amet</a></li>
+                <li><a href="#">Arcu commodo non adipiscing quis</a></li>
+                <li><a href="#">Accumsan vis lacinia semper</a></li>
+              </ul>
+            </section>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+	-->
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row double">
+			<!--
+          <div class="6u">
+            <div class="row collapse-at-2">
+              <div class="6u">
+                <h3>Accumsan</h3>
+                <ul class="alt">
+                  <li><a href="#">Nascetur nunc varius</a></li>
+                  <li><a href="#">Vis faucibus sed tempor</a></li>
+                  <li><a href="#">Massa amet lobortis vel</a></li>
+                  <li><a href="#">Nascetur nunc varius</a></li>
+                </ul>
+              </div>
+              <div class="6u">
+                <h3>Faucibus</h3>
+                <ul class="alt">
+                  <li><a href="#">Nascetur nunc varius</a></li>
+                  <li><a href="#">Vis faucibus sed tempor</a></li>
+                  <li><a href="#">Massa amet lobortis vel</a></li>
+                  <li><a href="#">Nascetur nunc varius</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+		  -->
+          <div class="6u">
+            <h2>Inquiries</h2>
+            <p>
+            Please reach out to <a href = "mailto: nobannobgsa@gmail.com">nobannobgsa at gmail.com</a> for collaborations and inquiries</p>
+            <ul class="icons">
+              <li>
+                <a href="#" class="icon fa-twitter"
+                  ><span class="label">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a href="https://www.facebook.com/BGSA.UMD" class="icon fa-facebook"
+                  ><span class="label">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon fa-instagram"
+                  ><span class="label">Instagram</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon fa-linkedin"
+                  ><span class="label">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon fa-pinterest"
+                  ><span class="label">Pinterest</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="copyright">
+          <li>&copy; Untitled. All rights reserved.</li>
+          <li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
