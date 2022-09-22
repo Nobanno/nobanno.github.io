@@ -1,3 +1,31 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@saadabrar12 
+Nobanno
+/
+nobanno.github.io
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+nobanno.github.io/css/style.css
+@saadabrar12
+saadabrar12 adding new pages;
+Latest commit fb62df7 14 days ago
+ History
+ 1 contributor
+1151 lines (961 sloc)  18 KB
+
 @charset "UTF-8";
 @import url(font-awesome.min.css);
 @import url("http://fonts.googleapis.com/css?family=Roboto:500,300");
@@ -959,12 +987,20 @@ input[type="button"]:disabled,
   color: #666f77;
   font-weight: 500;
   height: inherit;
-  left: 1.25em;
+  left: 3.0em;
   line-height: inherit;
-  margin: 0;
+  margin: 0.5em 0.0em 0.0em 0.5em;
   padding: 0;
   position: absolute;
   top: 0;
+  float: center;
+}
+
+#header img {
+  max-width: 40px;
+  height: inherit;
+  float: left;
+  margin: 10px 10px 10px 10px;
 }
 
 #header h1 a {
@@ -1043,9 +1079,10 @@ input[type="button"]:disabled,
   background-position: center center;
   background-repeat: no-repeat;
   color: #ffffff;
-  padding: 14em 0;
+  padding: 14em 12px;
   text-align: center;
   position: relative;
+
 }
 
 #banner:before {
@@ -1059,7 +1096,20 @@ input[type="button"]:disabled,
 }
 
 #banner .inner {
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
   position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   z-index: 1;
 }
 
@@ -1149,3 +1199,18 @@ input[type="button"]:disabled,
 #footer .icons a {
   color: #bbb;
 }
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+You have unread notifications
