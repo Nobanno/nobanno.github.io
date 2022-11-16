@@ -1044,18 +1044,19 @@ input[type="button"]:disabled,
 
 /* CSS */
 .btn {
-  background-color: white;
-  color: black;
+  background-color: #629dd1;
+  color: rgb(255, 255, 255);
   text-align: center;
   font-size: 24px;
-  border: 2px solid #555555;
+  border: 1px solid #555555;
+  border-radius: 6px;
 }
 .btn:hover {
-  background-color: #ababab;
-  color: rgb(0, 0, 0);
+  background-color: #308cdc;
+  color: rgb(255, 255, 255);
 }
 .btn:active {
-  background-color: #555555;
+  background-color: #0182f4;
   color: white;
 }
 

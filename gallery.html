@@ -24,108 +24,6 @@
   <body id="top">
     <!-- Header -->
     <header id="header" class="skel-layers-fixed">
-      <script type="module">
-        function showImages(typeEvent) {
-          const myNode = document.getElementsByClassName("carousel-item");
-          while (myNode[0]) {
-            myNode[0].parentNode.removeChild(myNode[0]);
-          }
-          var dict = { summergames2022: 32, bbq2022: 32, orientation2022: 23 };
-          const baseUrl = "images/2022/" + typeEvent + "/";
-          // Now you want some kind of file naming system, (Ex. I'll use increments of 1)
-          //So in my folder, let's say I got 5 images that are; 0.png , 1.png, 2.png , ... , 5.png
-          var str = "GeeksforGeeks";
-          console.log(str);
-          let carousel = document.getElementsByClassName("carousel")[0];
-          console.log(carousel);
-          var active = true;
-          //const fs = require("fs");
-          //var files = fs.readdirSync(baseUrl);
-          for (let i = 0; i < dict[typeEvent]; i++) {
-            if (i === 0) {
-              active = true;
-            } else {
-              active = false;
-            }
-            var div = document.createElement("div");
-            if (active) {
-              div.className = "carousel-item active";
-            } else {
-              div.className = "carousel-item";
-            }
-            var img = document.createElement("img");
-
-            img.src = baseUrl + i + ".jpg"; //Here you can dynamically generate i+1 amount of pictures
-            div.appendChild(img);
-            console.log("HELLO");
-            carousel.appendChild(div);
-
-            //carousel.createElement(tagName[, options]); //I've noticed that list <li> elements are also hardcoded and probably have something to do with JQuery's scroll, so those can be dynamically generate the same way..
-          }
-          const slides = document.getElementsByClassName("carousel-item");
-          const nextButton = document.getElementById("carousel-button-next");
-          const prevButton = document.getElementById("carousel-button-prev");
-          const dots = document.getElementsByClassName("dot");
-          let position = 0;
-          const numberOfSlides = slides.length;
-
-          function hideAllSlides() {
-            // remove all slides not currently being viewed
-            for (const slide of slides) {
-              slide.classList.remove("carousel-item-visible");
-              slide.classList.add("carousel-item-hidden");
-            }
-          }
-
-          const handleMoveToNextSlide = function (e) {
-            hideAllSlides();
-
-            // check if last slide has been reached
-            if (position === numberOfSlides - 1) {
-              position = 0; // go back to first slide
-            } else {
-              // move to next slide
-              position++;
-            }
-            // make current slide visible
-            slides[position].classList.add("carousel-item-visible");
-          };
-
-          const handleMoveToPrevSlide = function (e) {
-            hideAllSlides();
-
-            // check if we're on the first slide
-            if (position === 0) {
-              position = numberOfSlides - 1; // move to the last slide
-            } else {
-              // move back one
-              position--;
-            }
-            // make current slide visible
-            slides[position].classList.add("carousel-item-visible");
-          };
-
-          nextButton.addEventListener("click", handleMoveToNextSlide);
-          prevButton.addEventListener("click", handleMoveToPrevSlide);
-        }
-
-        $(document).on("click", '[name="resolution"]', function (e) {
-          e.stopPropagation();
-
-          console.log(this.id);
-          showImages(this.id);
-          // add class active to current button and remove it from the siblings
-          $(this)
-            .toggleClass("active")
-            .siblings()
-            .not(this)
-            .removeClass("active");
-        });
-        $(document).ready(function () {
-          console.log("ready!");
-          showImages("summergames2022");
-        });
-      </script>
       <a href="index.html"
         ><img src="images/Final Logo_yellow.png" alt="Nobanno BGSA"
       /></a>
@@ -298,5 +196,109 @@
         </ul>
       </div>
     </footer>
+    <script type="module">
+      function showImages(typeEvent) {
+        const myNode = document.getElementsByClassName("carousel-item");
+        while (myNode[0]) {
+          myNode[0].parentNode.removeChild(myNode[0]);
+        }
+        var dict = { summergames2022: 32, bbq2022: 32, orientation2022: 23 };
+        const baseUrl = "images/2022/" + typeEvent + "/";
+        // Now you want some kind of file naming system, (Ex. I'll use increments of 1)
+        //So in my folder, let's say I got 5 images that are; 0.png , 1.png, 2.png , ... , 5.png
+        var str = "GeeksforGeeks";
+        console.log(str);
+        let carousel = document.getElementsByClassName("carousel")[0];
+        console.log(carousel);
+        var active = true;
+        //const fs = require("fs");
+        //var files = fs.readdirSync(baseUrl);
+        for (let i = 0; i < dict[typeEvent]; i++) {
+          if (i === 0) {
+            active = true;
+          } else {
+            active = false;
+          }
+          var div = document.createElement("div");
+          if (active) {
+            div.className = "carousel-item carousel-item-visible";
+          } else {
+            div.className = "carousel-item";
+          }
+          var img = document.createElement("img");
+
+          img.src = baseUrl + i + ".jpg"; //Here you can dynamically generate i+1 amount of pictures
+          div.appendChild(img);
+          console.log("HELLO");
+          carousel.appendChild(div);
+
+          //carousel.createElement(tagName[, options]); //I've noticed that list <li> elements are also hardcoded and probably have something to do with JQuery's scroll, so those can be dynamically generate the same way..
+        }
+        const slides = document.getElementsByClassName("carousel-item");
+        const nextButton = document.getElementById("carousel-button-next");
+        const prevButton = document.getElementById("carousel-button-prev");
+        const dots = document.getElementsByClassName("dot");
+        let position = 0;
+        const numberOfSlides = slides.length;
+
+        function hideAllSlides() {
+          // remove all slides not currently being viewed
+          for (const slide of slides) {
+            slide.classList.remove("carousel-item-visible");
+            slide.classList.add("carousel-item-hidden");
+          }
+        }
+
+        const handleMoveToNextSlide = function (e) {
+          hideAllSlides();
+
+          // check if last slide has been reached
+          if (position === numberOfSlides - 1) {
+            position = 0; // go back to first slide
+          } else {
+            // move to next slide
+            position++;
+          }
+          // make current slide visible
+          slides[position].classList.add("carousel-item-visible");
+        };
+
+        const handleMoveToPrevSlide = function (e) {
+          hideAllSlides();
+
+          // check if we're on the first slide
+          if (position === 0) {
+            position = numberOfSlides - 1; // move to the last slide
+          } else {
+            // move back one
+            position--;
+          }
+          // make current slide visible
+          slides[position].classList.add("carousel-item-visible");
+        };
+
+        nextButton.addEventListener("click", handleMoveToNextSlide);
+        prevButton.addEventListener("click", handleMoveToPrevSlide);
+        //document.location.reload();
+        $("#a").load("gallery.html");
+      }
+
+      $(document).on("click", '[name="resolution"]', function (e) {
+        e.stopPropagation();
+
+        console.log(this.id);
+        showImages(this.id);
+        // add class active to current button and remove it from the siblings
+        $(this)
+          .toggleClass("active")
+          .siblings()
+          .not(this)
+          .removeClass("active");
+      });
+      $(document).ready(function () {
+        console.log("ready!");
+        showImages("summergames2022");
+      });
+    </script>
   </body>
 </html>
