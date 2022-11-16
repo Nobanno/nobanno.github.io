@@ -501,7 +501,7 @@ img.bg {
 #section {
   width: 20%;
   min-height: 36em;
-  float: left;
+  float: center;
   display: inline;
 }
 #section-wrapper {

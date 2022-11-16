@@ -1,43 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@saadabrar12 
-Nobanno
-/
-nobanno.github.io
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-nobanno.github.io/css/style.css
-@saadabrar12
-saadabrar12 adding new pages;
-Latest commit fb62df7 14 days ago
- History
- 1 contributor
-1151 lines (961 sloc)  18 KB
-
-@charset "UTF-8";
-@import url(font-awesome.min.css);
-@import url("http://fonts.googleapis.com/css?family=Roboto:500,300");
-
-/*
-	Ion by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-
-/* Basic */
-
 body {
   background: #fff;
 }
@@ -289,6 +249,85 @@ select:focus,
 textarea:focus {
   border-color: #629dd1;
   box-shadow: 0 0 0 1px #629dd1;
+}
+
+.row-centered {
+  text-align: center;
+}
+
+/* Carousel */
+
+.carousel {
+  max-width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.carousel .carousel-item,
+.carousel .carousel-item-hidden {
+  display: none; /* hide all slide images not currently being viewed */
+}
+
+.carousel .carousel-item-visible {
+  display: block; /* show current slide image */
+  animation: fadeVisibility 0.5s; /* for fading effect when switching between slides */
+}
+
+.carousel .carousel-item img {
+  width: 100%;
+  /*max-width: 600px;*/
+  height: 100%;
+}
+
+/* Navigation control styles */
+.carousel .carousel-actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* put space between the navigation buttons */
+  position: absolute; /* position navigation buttons on top */
+  top: 50%; /* center navigation buttons on the slide */
+  transform: translateY(-50%); /* align navigation buttons */
+}
+
+.carousel .carousel-actions button {
+  border-radius: 50px;
+  background-color: rgb(152, 152, 152);
+  border: 0;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel .carousel-actions button#carousel-button-prev {
+  margin-left: 20px; /* prevent previous button from touching the side*/
+}
+
+.carousel .carousel-actions button#carousel-button-next {
+  margin-right: 20px; /* prevent next button from touching the side*/
+}
+
+.carousel-dots {
+  text-align: center;
+}
+
+.dot {
+  opacity: 0.7; /* gray out dots for slides not being visted */
+}
+
+.dot:focus {
+  border: 1px solid black; /* dot for currently visited slide */
+}
+
+/* hanlde smooth transitions between slides */
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .select-wrapper {
@@ -987,9 +1026,9 @@ input[type="button"]:disabled,
   color: #666f77;
   font-weight: 500;
   height: inherit;
-  left: 3.0em;
+  left: 3em;
   line-height: inherit;
-  margin: 0.5em 0.0em 0.0em 0.5em;
+  margin: 0.5em 0em 0em 0.5em;
   padding: 0;
   position: absolute;
   top: 0;
@@ -1001,6 +1040,23 @@ input[type="button"]:disabled,
   height: inherit;
   float: left;
   margin: 10px 10px 10px 10px;
+}
+
+/* CSS */
+.btn {
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  border: 2px solid #555555;
+}
+.btn:hover {
+  background-color: #ababab;
+  color: rgb(0, 0, 0);
+}
+.btn:active {
+  background-color: #555555;
+  color: white;
 }
 
 #header h1 a {
@@ -1082,7 +1138,6 @@ input[type="button"]:disabled,
   padding: 14em 12px;
   text-align: center;
   position: relative;
-
 }
 
 #banner:before {
@@ -1199,18 +1254,3 @@ input[type="button"]:disabled,
 #footer .icons a {
   color: #bbb;
 }
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-You have unread notifications
