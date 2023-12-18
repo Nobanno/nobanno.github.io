@@ -36,3 +36,4 @@
 ehthumbs.db
 Thumbs.db
 Pipfile
+*/.DS_Store
